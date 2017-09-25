@@ -1,0 +1,87 @@
+                      METRo Developer README file
+
+You are currently reading the Developer README file. For general information
+about METRo please read the "README" file.
+
+
+========================================
+== Setting up development environment ==
+========================================
+
+init_devel.sh
+-------------
+You need to run the 'init_devel.sh' script to prepare your working directory. 
+If the script complain about the environment variable "PYTHON_INCLUDE": 
+you need to set it to a valid value. Usualy, it will be something like:
+'export PYTHON_INCLUDE=/usr/include/pythonX.X' where the X's are the 
+version numbers. You only need to run the 'init_devel.sh' script one time.
+
+* From now on, we assume the 'init_devel.sh' script has been run.
+
+
+=======================
+== Compiling "model" ==
+=======================
+
+Fortran model
+-------------
+To compile the Fortran model you will need to perform the following action:
+1) cd src/model/
+2) ../../scripts/do_macadam
+
+
+======================
+== Building package ==
+======================
+
+1) Change the METRo version number in the following files:
+    README
+    scripts/do_macadam
+    src/frontend/metro_config.py
+
+2) Change realease date in the following files:
+    README
+    src/frontend/metro_config.py
+
+3) Commit every change
+    svn commit
+
+4) Compile model:
+    compile the Fortran model (see == Compiling "model" ==)
+
+5) Update package list
+    grep -E "^src/frontend/.*\.py" scripts/make_package.py | sort > /tmp/packaged_modules
+    find src/frontend -name *.py | sort > /tmp/actual_modules
+    diff -y -W 200 /tmp/packaged_modules /tmp/actual_modules
+    vi scripts/make_package.py
+
+6) Build Package
+    cd scripts/ 
+    ./make_package.py
+    * You need a valid gpg key to be able to sign your package
+
+=============
+== Release ==
+=============
+
+1) Make a tag in SVN for the release of that version. You will need an access to the metro project on GNA to do that.
+    The following is an exemple of the user Francois Fortin making a tags for the 3.2.4 version
+
+    svn copy svn+ssh://francois_fortin@svn.gna.org/svn/metro/metro/trunk \
+             svn+ssh://francois_fortin@svn.gna.org/svn/metro/metro/tags/metro-3.2.4
+    
+2) Upload package to the GNA web site (http://download.gna.org/metro/)
+    scp metro-3.2.4.tar.bz2  metro-3.2.4.tar.bz2.sig francois_fortin@download.gna.org:/upload/metro/
+
+3) Create a new LATEST_RELEASE file with the new version number. The content of the file is:
+
+------------------------------------- cut here --------------------------------
+Please note:
+
+- The latest stable version of the METRo package is:
+  metro-3.2.4
+------------------------------------- cut here --------------------------------
+
+4) Upload the LATEST_RELEASE file to the GNA web site (http://download.gna.org/metro/)
+   scp LATEST_RELEASE francois_fortin@download.gna.org:/upload/metro/
+

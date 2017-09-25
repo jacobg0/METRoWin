@@ -1,0 +1,68 @@
+# translation of metro_data.po to
+# Copyright (C) 2007 Environment Canada.
+# Miguel Tremblay <miguel.tremblay@ec.gc.ca>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: metro_data\n"
+"POT-Creation-Date: 2005-03-17 14:56+EST\n"
+"PO-Revision-Date: 2004-12-02 11:59-0500\n"
+"Last-Translator: Miguel Tremblay <miguel.tremblay@ec.gc.ca>\n"
+"Language-Team:  <C@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#: src/frontend/data_module/metro_data.py:11
+msgid "This metro_data object is READONLY"
+msgstr "This metro_data object is READONLY"
+
+#: src/frontend/data_module/metro_data.py:12
+msgid "This column name already exist"
+msgstr "This column name already exist"
+
+#: src/frontend/data_module/metro_data.py:177
+#: src/frontend/data_module/metro_data.py:332
+#: src/frontend/data_module/metro_data.py:347
+msgid "%s is not a valid column name. Valid column name "
+msgstr "%s is not a valid column name. Valid column name "
+
+#: src/frontend/data_module/metro_data.py:179
+#: src/frontend/data_module/metro_data.py:334
+#: src/frontend/data_module/metro_data.py:349
+msgid "are: %s"
+msgstr "are: %s"
+
+#: src/frontend/data_module/metro_data.py:184
+msgid "Array does not contain this indice: %d"
+msgstr "Array does not contain this indice: %d"
+
+#: src/frontend/data_module/metro_data.py:188
+msgid "Array does not have the right lenght.\n"
+msgstr "Array does not have the right lenght.\n"
+
+#: src/frontend/data_module/metro_data.py:189
+msgid "Array length: %d \n"
+msgstr "Array length: %d \n"
+
+#: src/frontend/data_module/metro_data.py:190
+msgid "Matrix length: %d \n"
+msgstr "Matrix length: %d \n"
+
+#: src/frontend/data_module/metro_data.py:251
+msgid "Cant append column '%s'.%s"
+msgstr "Cant append column '%s'.%s"
+
+#: src/frontend/data_module/metro_data.py:293
+msgid ""
+"'%s' is not a valid key. Valid keys are:\n"
+"%s"
+msgstr ""
+"'%s' is not a valid key. Valid keys are:\n"
+"%"
+
+#: src/frontend/data_module/metro_data.py:406
+msgid "All the data are invalid"
+msgstr "All the data are invalid"

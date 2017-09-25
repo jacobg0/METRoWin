@@ -1,0 +1,29 @@
+# translation of metro_read_observation.po to 
+# Copyright (C) 2007 Environnement Canada.
+# Miguel Tremblay <miguel.tremblay@ec.gc.ca>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: metro_read_observation\n"
+"POT-Creation-Date: Mon Nov  8 13:18:41 2004\n"
+"PO-Revision-Date: 2004-11-08 13:19-0500\n"
+"Last-Translator: Miguel Tremblay <miguel.tremblay@ec.gc.ca>\n"
+"Language-Team:  <C@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#: metro_read_observation.py:33
+msgid "METRo need a valid observation file."
+msgstr "METRo nécessite un fichier d'observation valide."
+
+#: metro_read_observation.py:43
+msgid "METRo need an observation file, please use "
+msgstr "METRo nécessite un fichier d'observation valide, svp utilisez "
+
+#: metro_read_observation.py:44
+msgid "the option: '--input-observation'"
+msgstr "l'option: '--input-observation'"
+

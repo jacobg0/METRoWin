@@ -1,0 +1,127 @@
+.TH metro 1
+.SH NAME
+metro \- METRo is a road weather forecast software from Environment Canada.
+.SH SYNOPSIS
+.B metro
+[\fB\-\-config\fR \fIfilename\fR][\fB\-\-enable\-sunshadow \fR[\fB\-\-sunshadow\-method \fImethod\fR]\fR] [\fB\-\-help\fR]  [\fB\-\-fix-deep\-soil\-temperature \fItemperature\fR\] [\fB\-\-generate\-config\fR \fIfilename\fR] [\fB\-\-input\-forecast\fR \fIfilename\fR] [\fB\-\-input\-observation\fR \fIfilename\fR] [\fB\-\-input\-station\fR \fIfilename\fR] [\fB\-\-lang\fR \fI[fr|en]\fR] [\fB\-\-log\-file\fR \fIfilename\fR] [\fB\-\-output\-roadcast\fR \fIfilename\fR]  [\fB\-\-output-subsurface-levels\fR] [\fB\-\-roadcast-start-date\fR \fIdate\fR] [\fB\-\-selftest\fR] [\fB\-\-silent\fR] [\fB\-\-use\-anthropogenic\-flux\fR]  [\fB\-\-use\-infrared\-forecast\fR] [\fB\-\-use-sst-sensor-depth\fR] [\fB\-\-use\-solarflux\-forecast\fR] [\fB\-\-verbose\-level\fR \fIlevel\fR] [\fB\-\-version\fR]  
+
+.SH DESCRIPTION
+With the help of observations provided by roads weather stations (road weather information system, RWIS) and the atmospheric forecast, METRo can predict the roads conditions with particular interest such as: freezing rain, accumulation of snow, frost or defrost soil. 
+
+
+
+.SH OPTIONS
+
+
+
+.TP
+.B \-\-config filename
+If a configuration file is provided, the options in this file can be used instead of those given in command line.  To generate a file with the requested format, see the option \-\-generate\-config .
+.TP
+.B \-\-enable\-sunshadow
+Optional.  METRo uses sun-shadow algorithm to determine if the road is exposed to sun at a particular time. There is two methods to compute this shadow. See the option \-\-sunshadow\-method for more details. The station XML file contains the information about the visible elevation of the road under the '<visible\-horizon>' element. The sun-shadow routine requires <azimuth>, <elevation> pairs being ordered by growing azimuths values and also uniform step in azimuth is required (i.e, each neighbour azimuth values are displaced by same distance), otherwise it can give a wrong results.
+.TP
+.B \-\-help
+Display a list of command line options.
+.TP
+.B \-\-fix-deep\-soil\-temperature temperature
+Optional. Fix the deep soil temperature to a given value in degree Celsius. 'temperature' must be a number between the maximum and minimum road temperature values given in metro_constant.py. When this flag is not set, the default value is computed from the surface and deep sensor values.
+.TP
+.B \-\-generate\-config filename
+Generate an empty config file.  You can then fill the options that will be used if the option \-\-config is set to filename on a subsequent call to metro.
+.TP
+.B \-\-input\-forecast filename
+Set where is the atmosperic forecast file.
+.TP
+.B \-\-input\-observation filename
+filename is where the observation of the RWIS station is.
+.TP
+.B \-\-input\-station filename
+filename is where the configuration file of the RWIS station is.
+.TP
+.B\-\-lang fr|en
+Choose the language of message for METRo.  Default is english. Only French is currently implemented as other language.
+.TP
+.B \-\-log\-file filename
+Set the path of the metro log file.
+.TP
+.B \-\-output\-subsurface\-levels
+Optional.  Put in the output roadcast all the temperature for the subsurfaces levels, 19 levels for roads or a uniform grid at every cm for bridges. WARNING: Using this option slow down METRo by a factor of 2.
+.TP
+.B \-\-roadcast-start-date date
+Optional.  If this argument is not present, the date of the last observation is used. Date of the first roadcast.  The format is ISO 8601.  See http://en.wikipedia.org/wiki/ISO_8601 for further details.
+.TP
+.B \-\-selftest
+Execute a test with default files provided with metro.  The default command line is:
+
+metro \-\-roadcast-start-date 2004\-01\-30T20:00Z \-\-input\-forecast ../../data/forecast/forecast_selftest.xml \-\-input\-observation ../../data/observation/observation_selftest.xml \-\-input\-station ../data/station/station_selftest.xml \-\-output\-forecast ../../data/roadcast/roadcast_selftest.xml \-\-verbose\-level 5
+.TP
+.B\-\-silent
+Do not write in the standard output.
+.TP
+.B \-\-sunshadow\-method
+Optional. Only used if \-\-enable\-sunshadow is set. 'method' takes the value of [1|2]. If no value is given, '1' is used as the default value.
+  1 = Basic method (default). It sets solar flux to zero when Sun is below
+      visible horizon
+  2 = Enhanced method. Replaces global solar flux with its diffuse component 
+      when Sun is below visible horizon.
+.TP
+.B \-\-use-anthropogenic-flux
+Optional. Use this argument if you want to provide the anthropogenic flux in the atmospheric forecast file instead of using the default value of 10 W/m². The tag for anthropogenic flux in forecast file is '<fa>'. 
+.TP
+.B \-\-use-infrared-forecast
+Optional. Use this argument if you want to provide the infra-fred flux in the atmospheric forecast file instead of a theoretical flux based on cloud cover. The tag for infra-red flux in forecast file is '<ir>'.
+.TP
+.B \-\-use-sst-sensor-depth
+Optional. Use this argument if the subsurface sensor is not at 0.4 m from the surface. This value can be between 0.2 m and 0.6 m. The modified value should be in the station XML config file in the element '<sst-sensor-depth>, included in the <header> node. 
+.TP
+.B \-\-use-solarflux-forecast
+Optional. Use this argument if you want to provide the solar flux in the atmospheric forecast file instead of a theoretical flux based on cloud cover. The tag for solar flux in forecast file is '<sf>'.
+.TP
+.B \-\-verbose\-level level
+Select the verbose level of the logged messages of metro.  
+.RS
+0- No log is made of any message
+.RE
+.RS
+1- Minimal level 
+.RE
+.RS
+2- Normal (default)
+.RE
+.RS
+3- Full
+.RE
+.RS
+4- Debug
+.RE
+.TP
+.B
+\-\-version
+output version information and exit
+
+.SH EXAMPLES
+Standard usage of METRo:
+.RS 
+metro  \-\-input\-forecast forecast.xml \-\-input\-observation observation.xml \-\-input\-station station.xml \-\-output\-forecast roadcast.xml
+.RE
+Fix the deep soil temperature to 0 degree Celsius:
+.RS
+metro  \-\-input\-forecast forecast.xml \-\-input\-observation observation.xml \-\-input\-station station.xml \-\-output\-forecast roadcast.xml \-\-fix\-deep\-soil\-temperature 0.0
+.RE
+Use the solar flux in the forecast file:
+.RS
+metro  \-\-input\-forecast forecast.xml \-\-input\-observation observation.xml \-\-input\-station station.xml \-\-output\-forecast roadcast.xml \-\-use\-solarflux\-forecast
+.RE
+Use the sun\-shadow method:
+.RS
+metro  \-\-input\-forecast forecast.xml \-\-input\-observation observation.xml \-\-input\-station station.xml \-\-output\-forecast roadcast.xml \-\-enable\-sunshadow \-\-sunshadow\-method 2
+
+.SH AUTHOR
+Written by Miguel Tremblay, Francois Fortin, Yves Delage and Louis-Philippe Crevier.
+.SH COPYRIGHT
+COPYRIGHT \(co 2004, Service Meteorologique du Canada, Environnement Canada.  See documentation at https://framagit.org/metroprojects/metro/wikis/home for details. Permission is granted to copy, distribute and/or modify this document under the terms of the GNU General Public License, Version 2.
+
+
+.SH REPORTING BUGS
+Report bugs to <metro-users@framalistes.org>

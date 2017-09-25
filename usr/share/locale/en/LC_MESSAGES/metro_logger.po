@@ -1,0 +1,107 @@
+# translation of metro_logger.po to 
+# translation of test.po to
+# translation of metro_logger.po to
+# Copyright (C) 2007 Environment Canada.
+# Miguel Tremblay <miguel.tremblay@ec.gc.ca>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: metro_logger\n"
+"POT-Creation-Date: Fri Nov  5 11:24:41 2004\n"
+"PO-Revision-Date: 2004-11-05 14:41-0500\n"
+"Last-Translator: Miguel Tremblay <miguel.tremblay@ec.gc.ca>\n"
+"Language-Team:  <C@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#: metro_logger.py:42
+msgid "DEBUG      "
+msgstr "DEBUG      "
+
+#: metro_logger.py:43
+msgid "INFORMATIVE"
+msgstr "INFORMATIVE"
+
+#: metro_logger.py:44 metro_logger.py:46
+msgid "EXECUTION  "
+msgstr "EXECUTION  "
+
+#: metro_logger.py:45
+msgid "WARNING    "
+msgstr "WARNING    "
+
+#: metro_logger.py:47
+msgid "CRITICAL   "
+msgstr "CRITICAL   "
+
+#: metro_logger.py:48
+msgid "STOP       "
+msgstr "STOP       "
+
+#: metro_logger.py:49
+msgid "UNDEFINED  "
+msgstr "UNDEFINED  "
+
+#: metro_logger.py:86
+msgid "METRo version   : "
+msgstr "METRo version   : "
+
+#: metro_logger.py:90
+msgid "METRo started   : %s %s"
+msgstr "METRo started   : %s %s"
+
+#: metro_logger.py:96
+msgid "command line    : "
+msgstr "command line    : "
+
+#: metro_logger.py:100
+msgid "logger verbosity: "
+msgstr "logger verbosity: "
+
+#: metro_logger.py:102
+msgid "Minimal"
+msgstr "Minimal"
+
+#: metro_logger.py:104
+msgid "Normal"
+msgstr "Normal"
+
+#: metro_logger.py:106
+msgid "Full"
+msgstr "Full"
+
+#: metro_logger.py:108
+msgid "Debug"
+msgstr "Debug"
+
+#: metro_logger.py:110
+msgid "Undefined"
+msgstr "Undefined"
+
+#: metro_logger.py:137
+msgid "Starting METRo logger"
+msgstr "Starting METRo logger"
+
+#: metro_logger.py:157
+msgid "can't open/create logger file:'%s'"
+msgstr "can't open/create logger file:'%s'"
+
+#: metro_logger.py:165
+msgid "METRo logger started, log file:'%s'"
+msgstr "METRo logger started, log file:'%s'"
+
+#: metro_logger.py:240
+msgid "%s unexpected error, can't write message in the log file: %s"
+msgstr "%s unexpected error, can't write message in the log file: %s"
+
+#: metro_logger.py:252
+msgid "An unrecoverable error has occured, see details in the log file: "
+msgstr "An unrecoverable error has occured, see details in the log file: "
+
+#: metro_logger.py:257
+msgid "Lauching METRo with full logging capability may help you trace the error."
+msgstr "Lauching METRo with full logging capability may help you trace the error."
+

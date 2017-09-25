@@ -1,0 +1,42 @@
+# translation of metro_preprocess_fsint2.po to 
+# Copyright (C) 2007 Environment Canada.
+# Miguel Tremblay <miguel.tremblay@ec.gc.ca>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: metro_preprocess_fsint2\n"
+"POT-Creation-Date: Tue Nov 16 16:21:17 2004\n"
+"PO-Revision-Date: 2004-11-08 11:32-0500\n"
+"Last-Translator: Miguel Tremblay <miguel.tremblay@ec.gc.ca>\n"
+"Language-Team:  <C@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#: ../src/frontend/executable_module/metro_preprocess_fsint2.py:147
+msgid "For the date %d-%d-%d,\n"
+msgstr "For the date %d-%d-%d,\n"
+
+#: ../src/frontend/executable_module/metro_preprocess_fsint2.py:149
+msgid "at the latitude %0.2f "
+msgstr "at the latitude %0.2f "
+
+#: ../src/frontend/executable_module/metro_preprocess_fsint2.py:150
+msgid " and longitude %0.2f "
+msgstr " and longitude %0.2f "
+
+#: ../src/frontend/executable_module/metro_preprocess_fsint2.py:151
+#, fuzzy
+msgid ""
+"\n"
+"sunrise is at %d:%d:%d UTC\n"
+msgstr ""
+"\n"
+"sunrise is at %d h %d min %d sec UTC\n"
+
+#: ../src/frontend/executable_module/metro_preprocess_fsint2.py:153
+#, fuzzy
+msgid "sunset  is at %d:%d:%d UTC"
+msgstr "sunset is at %d h %d min %d sec UTC"

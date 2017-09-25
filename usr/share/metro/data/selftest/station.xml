@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<station>
+    <header>
+        <version>1.0</version>
+        <road-station>rsy</road-station>
+        <time-zone>AST4ADT</time-zone>
+        <production-date>2004-03-17T15:34Z</production-date>
+        <coordinate>
+            <latitude>46.2</latitude>
+            <longitude>-60.28</longitude>
+        </coordinate>
+        <station-type>bridge</station-type>
+    </header>
+    <roadlayer-list>
+        <roadlayer>
+            <position>1</position>
+            <type>asphalt</type>
+            <thickness>0.2032</thickness>
+        </roadlayer>
+        <roadlayer>
+            <position>2</position>
+            <type>gravier</type>
+            <thickness>0.4572</thickness>
+        </roadlayer>
+    </roadlayer-list>
+</station>

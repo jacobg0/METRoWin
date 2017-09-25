@@ -1,0 +1,41 @@
+# French translations for METRo package.
+# Copyright (C) 2007 Environnement Canada.
+# This file is distributed under the same license as the METRo package.
+# Miguel Tremblay <miguel.tremblay@ec.gc.ca>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-10 19:41+0000\n"
+"PO-Revision-Date: 2013-05-03 18:10+0000\n"
+"Last-Translator: Miguel Tremblay <miguel.tremblay@ec.gc.ca>\n"
+"Language-Team: French\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: metro_data_station.py:114
+#, python-format
+msgid "Wrong argument in the station config file %s."
+msgstr "Mauvais argument dans le fichier de configuration de la station %s"
+
+#: metro_data_station.py:116
+msgid "Station type must be \"road\" or \"bridge\". "
+msgstr "Le type de la station doit être \"pont\" ou \"route\". "
+
+#: metro_data_station.py:117
+msgid "Using \"road\" as default."
+msgstr "Utilisation de  \"route\" par défaut."
+
+#: metro_data_station.py:142
+#, fuzzy, python-format
+msgid ""
+"Sensor SST depth value in station config file is not between 0.01 m and 1.4 "
+"m. Given value: '%s' m."
+msgstr ""
+"La valeur pour la profondeur du senseur sous la surface dans le fichier de "
+"configuration de la station doit être entre 0.2 et 0.6. La valeur par défaut "
+"de 0.4 pour la profondeur sera utilisée."

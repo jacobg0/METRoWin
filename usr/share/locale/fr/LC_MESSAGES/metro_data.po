@@ -1,0 +1,70 @@
+# translation of metro_data.po to
+# Copyright (C) 2007 Environnement Canada.
+# Miguel Tremblay <miguel.tremblay@ec.gc.ca>, 2004, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: metro_data\n"
+"POT-Creation-Date: 2005-03-17 14:56+EST\n"
+"PO-Revision-Date: 2005-03-17 14:58-0500\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: src/frontend/data_module/metro_data.py:11
+#, fuzzy
+msgid "This metro_data object is READONLY"
+msgstr "L'objet metro_data est en lecture seulement"
+
+#: src/frontend/data_module/metro_data.py:12
+msgid "This column name already exist"
+msgstr "Ce nom de colonne existe déjà"
+
+#: src/frontend/data_module/metro_data.py:177
+#: src/frontend/data_module/metro_data.py:332
+#: src/frontend/data_module/metro_data.py:347
+msgid "%s is not a valid column name. Valid column name "
+msgstr "%s n'est pas un nom de colonne valide. Les noms valides sont"
+
+#: src/frontend/data_module/metro_data.py:179
+#: src/frontend/data_module/metro_data.py:334
+#: src/frontend/data_module/metro_data.py:349
+msgid "are: %s"
+msgstr ":%s"
+
+#: src/frontend/data_module/metro_data.py:184
+msgid "Array does not contain this indice: %d"
+msgstr "Array does not contain this indice: %d"
+
+#: src/frontend/data_module/metro_data.py:188
+msgid "Array does not have the right lenght.\n"
+msgstr "Array does not have the right lenght.\n"
+
+#: src/frontend/data_module/metro_data.py:189
+msgid "Array length: %d \n"
+msgstr "Array length: %d \n"
+
+#: src/frontend/data_module/metro_data.py:190
+msgid "Matrix length: %d \n"
+msgstr "Matrix length: %d \n"
+
+#: src/frontend/data_module/metro_data.py:251
+msgid "Cant append column '%s'.%s"
+msgstr "Impossible de faire l'adjonction de la colonne:'%s'.%s"
+
+#: src/frontend/data_module/metro_data.py:293
+msgid ""
+"'%s' is not a valid key. Valid keys are:\n"
+"%s"
+msgstr ""
+"'%s' n'est pas une clef valide. Les clefs valides sont:\n"
+"%s"
+
+#: src/frontend/data_module/metro_data.py:406
+msgid "All the data are invalid"
+msgstr "Toutes les données sont invalides"
+

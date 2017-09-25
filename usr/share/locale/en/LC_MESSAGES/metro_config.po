@@ -1,0 +1,486 @@
+# translation of metro_config.po to
+# Copyright (C) 2007 Environment Canada.
+#
+# Miguel Tremblay <miguel.tremblay@ec.gc.ca>, 2004, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: metro_config\n"
+"POT-Creation-Date: 2014-10-06 14:15+UTC\n"
+"PO-Revision-Date: 2014-10-06 14:30+0000\n"
+"Last-Translator: tremblay\n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/frontend/metro_config.py:116
+#, fuzzy
+msgid "Cant open METRo configuration file:'%s' test\n"
+msgstr "Cant open METRo configuration file:'%s'\n"
+
+#: src/frontend/metro_config.py:118
+msgid ""
+"The following error occured:\n"
+"%s"
+msgstr ""
+"The following error occured:\n"
+"%s"
+
+#: src/frontend/metro_config.py:131
+msgid "Error when reading METRo configuration\n"
+msgstr "Error when reading METRo configuration\n"
+
+#: src/frontend/metro_config.py:132
+msgid ""
+"file:'%s'. Please make sure that the file\n"
+"have "
+msgstr ""
+"file:'%s'. Please make sure that the file\n"
+"have "
+
+#: src/frontend/metro_config.py:133
+msgid "valid XML synthax and is not corrupted. You can "
+msgstr "valid XML synthax and is not corrupted. You can "
+
+#: src/frontend/metro_config.py:134
+msgid "check it with the command 'xmllint %s'. You can\n"
+msgstr "check it with the command 'xmllint %s'. You can\n"
+
+#: src/frontend/metro_config.py:135
+msgid "also generated a new one with the option: %s.\n"
+msgstr "also generated a new one with the option: %s.\n"
+
+#: src/frontend/metro_config.py:141
+msgid "Configuration file:'%s' loaded with success"
+msgstr "Configuration file:'%s' loaded with success"
+
+#: src/frontend/metro_config.py:153
+msgid "Unable to write to file '%s', the following\n"
+msgstr "Unable to write to file '%s', the following\n"
+
+#: src/frontend/metro_config.py:154
+msgid "error occured: %s"
+msgstr "error occured: %s"
+
+#: src/frontend/metro_config.py:166
+msgid "Additionnal configuration value added to METRo config."
+msgstr "Additionnal configuration value added to METRo config."
+
+#: src/frontend/metro_config.py:172
+msgid ""
+"%s\n"
+"key='%s'\n"
+"value='%s'"
+msgstr ""
+"%s\n"
+"key='%s'\n"
+"value='%s'"
+
+#: src/frontend/metro_config.py:193
+msgid "Generating METRo configuration file..."
+msgstr "Generating METRo configuration file..."
+
+#: src/frontend/metro_config.py:197
+msgid "METRo configuration file '%s' created with \n"
+msgstr "METRo configuration file '%s' created with \n"
+
+#: src/frontend/metro_config.py:199
+msgid "success. To launch METRo with that configuration\n"
+msgstr "success. To launch METRo with that configuration\n"
+
+#: src/frontend/metro_config.py:200
+msgid "file you need to use the --config option\n"
+msgstr "file you need to use the --config option\n"
+
+#: src/frontend/metro_config.py:209
+msgid "Reading and validating configuration file..."
+msgstr "Reading and validating configuration file..."
+
+#: src/frontend/metro_config.py:229
+msgid "Validating configuration"
+msgstr "Validating configuration"
+
+#: src/frontend/metro_config.py:236
+msgid "METRo configuration validated"
+msgstr "METRo configuration validated"
+
+#: src/frontend/metro_config.py:284
+msgid "bad arg: "
+msgstr "bad arg: "
+
+#: src/frontend/metro_config.py:289
+msgid "problem with arg: "
+msgstr "problem with arg: "
+
+#: src/frontend/metro_config.py:290
+#, fuzzy
+msgid ""
+"\n"
+"String(s) was not recognized as an argument."
+msgstr ""
+"\n"
+"String(s) was not recognize as an argument."
+
+#: src/frontend/metro_config.py:314
+msgid "%s is not a valid value for %s. Please use "
+msgstr "%s is not a valid value for %s. Please use "
+
+#: src/frontend/metro_config.py:316
+msgid ""
+"one of the\n"
+"following: 0, 1 , 2, 3, 4. High "
+msgstr ""
+"one of the\n"
+"following: 0, 1 , 2, 3, 4. High "
+
+#: src/frontend/metro_config.py:317
+msgid "value mean higher verbosity"
+msgstr "value mean higher verbosity"
+
+#: src/frontend/metro_config.py:341
+msgid "see man page: 'man %s'"
+msgstr "see man page: 'man %s'"
+
+#: src/frontend/metro_config.py:409
+#, fuzzy
+msgid "xpath path for station visible horizon"
+msgstr "xpath path for station root"
+
+#: src/frontend/metro_config.py:419
+#, fuzzy
+msgid "standard visible horizon items"
+msgstr "standard station header items"
+
+#: src/frontend/metro_config.py:423
+#, fuzzy
+msgid "extended visible horizon items"
+msgstr "extended station header items"
+
+#: src/frontend/metro_config.py:502
+msgid "forecast filename"
+msgstr "forecast filename"
+
+#: src/frontend/metro_config.py:507
+msgid "current version for forecast file"
+msgstr "current version for forecast file"
+
+#: src/frontend/metro_config.py:512
+msgid "min version for valid forecast file"
+msgstr "min version for valid forecast file"
+
+#: src/frontend/metro_config.py:517
+msgid "max version for valid forecast file"
+msgstr "max version for valid forecast file"
+
+#: src/frontend/metro_config.py:523
+msgid "observation filename"
+msgstr "observation filename"
+
+#: src/frontend/metro_config.py:528
+msgid "current version for observation file"
+msgstr "current version for observation file"
+
+#: src/frontend/metro_config.py:533
+msgid "min version for valid observation file"
+msgstr "min version for valid observation file"
+
+#: src/frontend/metro_config.py:538
+msgid "max version for valid observation file"
+msgstr "max version for valid observation file"
+
+#: src/frontend/metro_config.py:544
+msgid "station configuration filename"
+msgstr "station configuration filename"
+
+#: src/frontend/metro_config.py:549
+msgid "current version for station file"
+msgstr "current version for station file"
+
+#: src/frontend/metro_config.py:554
+msgid "min version for valid station file"
+msgstr "min version for valid station file"
+
+#: src/frontend/metro_config.py:559
+msgid "max version for valid station file"
+msgstr "max version for valid station file"
+
+#: src/frontend/metro_config.py:566
+msgid "roadcast filename"
+msgstr "roadcast filename"
+
+#: src/frontend/metro_config.py:571
+msgid "current version for roadcast file"
+msgstr "current version for roadcast file"
+
+#: src/frontend/metro_config.py:578
+msgid "METRo configuration filename"
+msgstr "METRo configuration filename"
+
+#: src/frontend/metro_config.py:583
+msgid "current version for METRo configuration file"
+msgstr "current version for METRo configuration file"
+
+#: src/frontend/metro_config.py:588 src/frontend/metro_config.py:593
+msgid "logger filename"
+msgstr "logger filename"
+
+#: src/frontend/metro_config.py:661
+msgid "standard data type for METRo XML files"
+msgstr "standard data type for METRo XML files"
+
+#: src/frontend/metro_config.py:666
+msgid "extended data type for METRo XML files"
+msgstr "extended data type for METRo XML files"
+
+#: src/frontend/metro_config.py:674
+msgid "xpath path for forecast root"
+msgstr "xpath path for forecast root"
+
+#: src/frontend/metro_config.py:679
+msgid "xpath path for forecast header"
+msgstr "xpath path for forecast header"
+
+#: src/frontend/metro_config.py:684
+msgid "xpath path for forecast prediction"
+msgstr "xpath path for forecast prediction"
+
+#: src/frontend/metro_config.py:708
+msgid "standard forecast header items"
+msgstr "standard forecast header items"
+
+#: src/frontend/metro_config.py:714
+msgid "extended forecast header items"
+msgstr "extended forecast header items"
+
+#: src/frontend/metro_config.py:751
+msgid "standard forecast prediction items"
+msgstr "standard forecast prediction items"
+
+#: src/frontend/metro_config.py:757
+msgid "extended forecast prediction items."
+msgstr "extended forecast prediction items."
+
+#: src/frontend/metro_config.py:766
+msgid "xpath path for observation root"
+msgstr "xpath path for observation root"
+
+#: src/frontend/metro_config.py:771
+msgid "xpath path for observation header"
+msgstr "xpath path for observation header"
+
+#: src/frontend/metro_config.py:776
+msgid "xpath path for observation measure data"
+msgstr "xpath path for observation measure data"
+
+#: src/frontend/metro_config.py:794 src/frontend/metro_config.py:838
+msgid "standard observation header items"
+msgstr "standard observation header items"
+
+#: src/frontend/metro_config.py:800
+msgid "extended observation header items"
+msgstr "extended observation header items"
+
+#: src/frontend/metro_config.py:844
+msgid "extended observation measure list."
+msgstr "extended observation measure list."
+
+#: src/frontend/metro_config.py:853
+msgid "xpath path for station root"
+msgstr "xpath path for station root"
+
+#: src/frontend/metro_config.py:858
+msgid "xpath path for station header"
+msgstr "xpath path for station header"
+
+#: src/frontend/metro_config.py:863
+msgid "xpath path for station road layer"
+msgstr "xpath path for station road layer"
+
+#: src/frontend/metro_config.py:892
+msgid "standard station header items"
+msgstr "standard station header items"
+
+#: src/frontend/metro_config.py:898
+msgid "extended station header items"
+msgstr "extended station header items"
+
+#: src/frontend/metro_config.py:914
+msgid "standard road layer items"
+msgstr "standard road layer items"
+
+#: src/frontend/metro_config.py:919
+msgid "extended road layer items"
+msgstr "extended road layer items"
+
+#: src/frontend/metro_config.py:929
+msgid "valid station layer type"
+msgstr "valid station layer type"
+
+#: src/frontend/metro_config.py:938
+msgid "xpath path for roadcast root"
+msgstr "xpath path for roadcast root"
+
+#: src/frontend/metro_config.py:943
+msgid "xpath path for roadcast header"
+msgstr "xpath path for roadcast header"
+
+#: src/frontend/metro_config.py:948
+msgid "xpath path for roadcast measure data"
+msgstr "xpath path for roadcast measure data"
+
+#: src/frontend/metro_config.py:982
+msgid "standard roadcast header items"
+msgstr "standard roadcast header items"
+
+#: src/frontend/metro_config.py:988
+msgid "extended roadcast header items"
+msgstr "extended roadcast header items"
+
+#: src/frontend/metro_config.py:1086
+msgid "standard roadcast prediction items"
+msgstr "standard roadcast prediction items"
+
+#: src/frontend/metro_config.py:1092
+msgid "extended roadcast prediction list."
+msgstr "extended roadcast prediction list."
+
+#: src/frontend/metro_config.py:1104
+msgid "default forecast attribute."
+msgstr "default forecast attribute."
+
+#: src/frontend/metro_config.py:1109
+msgid "extended forecast attribute."
+msgstr "extended forecast attribute."
+
+#: src/frontend/metro_config.py:1126 src/frontend/metro_config.py:1141
+msgid "default observation attribute."
+msgstr "default observation attribute."
+
+#: src/frontend/metro_config.py:1131 src/frontend/metro_config.py:1146
+msgid "extended observation attribute."
+msgstr "extended observation attribute."
+
+#: src/frontend/metro_config.py:1151
+msgid "time of the last observation."
+msgstr "time of the last observation."
+
+#: src/frontend/metro_config.py:1160
+msgid "logger verbosity level"
+msgstr "logger verbosity level"
+
+#: src/frontend/metro_config.py:1165
+msgid "logger shell display"
+msgstr "logger shell display"
+
+#: src/frontend/metro_config.py:1170
+msgid "default time zone if no TZ environment variable "
+msgstr "default time zone if no TZ environment variable "
+
+#: src/frontend/metro_config.py:1171
+msgid "is defined"
+msgstr "is defined"
+
+#: src/frontend/metro_config.py:1176
+msgid "default language is english"
+msgstr "default language is english"
+
+#: src/frontend/metro_config.py:1205
+msgid "METro module execution sequence"
+msgstr "METro module execution sequence"
+
+#: src/frontend/metro_config.py:1210
+msgid "roadcast start time"
+msgstr "roadcast start time"
+
+#: src/frontend/metro_config.py:1215
+msgid "user roadcast start time"
+msgstr "user roadcast start time"
+
+#: src/frontend/metro_config.py:1220
+msgid "model roadcast start time"
+msgstr "model roadcast start time"
+
+#: src/frontend/metro_config.py:1233
+msgid "default time zone for forecast header date"
+msgstr "default time zone for forecast header date"
+
+#: src/frontend/metro_config.py:1238
+msgid "default time zone for forecast prediction date"
+msgstr "default time zone for forecast prediction date"
+
+#: src/frontend/metro_config.py:1244
+msgid "Use infrared value from forecast"
+msgstr "Use infrared value from forecast"
+
+#: src/frontend/metro_config.py:1249
+msgid "Use solar flux value from forecast"
+msgstr "Use solar flux value from forecast"
+
+#: src/frontend/metro_config.py:1254
+msgid "Use anthropogenic flux value from forecast"
+msgstr "Use anthropogenic flux value from forecast"
+
+#: src/frontend/metro_config.py:1259
+msgid "Output levels (TL) in roadcast"
+msgstr "Output levels (TL) in roadcast"
+
+#: src/frontend/metro_config.py:1268
+msgid "default time zone for observation header date"
+msgstr "default time zone for observation header date"
+
+#: src/frontend/metro_config.py:1273
+msgid "default time zone for observation measure date"
+msgstr "default time zone for observation measure date"
+
+#: src/frontend/metro_config.py:1278
+msgid "Value of deep soil temperature"
+msgstr "Value of deep soil temperature"
+
+#: src/frontend/metro_config.py:1283
+msgid "Is the deep soil temperature fixed?"
+msgstr "Is the deep soil temperature fixed?"
+
+#: src/frontend/metro_config.py:1291
+msgid "default time zone for station header date"
+msgstr "default time zone for station header date"
+
+#: src/frontend/metro_config.py:1296
+msgid "Use subsurface temperature sensor depth value from station"
+msgstr "Use subsurface temperature sensor depth value from station"
+
+#: src/frontend/metro_config.py:1302
+msgid "Enable Sun-shadow correction"
+msgstr "Enable Sun-shadow correction"
+
+#: src/frontend/metro_config.py:1307
+msgid "Sun-shadow method number"
+msgstr "Sun-shadow method number"
+
+#: src/frontend/metro_config.py:1315
+msgid "default time zone for roadcast header date"
+msgstr "default time zone for roadcast header date"
+
+#: src/frontend/metro_config.py:1320
+msgid "default time zone for roadcast prediction date"
+msgstr "default time zone for roadcast prediction date"
+
+#: src/frontend/metro_config.py:1325
+msgid "default precision for roadcast prediction value"
+msgstr "default precision for roadcast prediction value"
+
+#: src/frontend/metro_config.py:1330
+msgid "test"
+msgstr "test"
+
+#~ msgid "forecast output filename"
+#~ msgstr "forecast output filename"
+
+#~ msgid "current version for forecast output file"
+#~ msgstr "current version for forecast output file"
+
+#~ msgid "default station roadlayer type"
+#~ msgstr "default station roadlayer type"

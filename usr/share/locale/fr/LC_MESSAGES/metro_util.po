@@ -1,0 +1,125 @@
+# translation of metro_util.po to
+# Copyright (C) 2007 Environnement Canada.
+# Miguel Tremblay <miguel.tremblay@ec.gc.ca>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: metro_util\n"
+"POT-Creation-Date: 2006-11-16 21:16+UTC\n"
+"PO-Revision-Date: 2004-12-02 11:55-0500\n"
+"Last-Translator: Miguel Tremblay <miguel.tremblay@ec.gc.ca>\n"
+"Language-Team:  <C@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#: ../src/frontend/toolbox/metro_util.py:89
+msgid "The executable 'metro.py' must be in one of the following directory:\n"
+msgstr ""
+"Le fichier executable metro.py doit être dans un des répertoires suivant:\n"
+
+#: ../src/frontend/toolbox/metro_util.py:90
+msgid "metro_directory/src/frontend' or 'metro_directory/bin'.\n"
+msgstr "metro_directory/src/frontend' ou 'metro_directory/bin'.\n"
+
+#: ../src/frontend/toolbox/metro_util.py:91
+msgid ""
+"The following path is not valid: '%s'.\n"
+"\n"
+msgstr ""
+"Le chemin d'accès suivant est invalide: '%s'.\n"
+"\n"
+
+#: ../src/frontend/toolbox/metro_util.py:92
+msgid "Aborting execution of METRo.\n"
+msgstr "Abandon de l'execution de METRo.\n"
+
+#: ../src/frontend/toolbox/metro_util.py:206
+msgid "In interpolate, the arrays does not"
+msgstr "Dans interpolate, les vecteurs n'ont pas"
+
+#: ../src/frontend/toolbox/metro_util.py:207
+msgid "have the same length. %d != %d\n"
+msgstr " la même longueur:%d != %d\n"
+
+#: ../src/frontend/toolbox/metro_util.py:211
+#, fuzzy
+msgid "Padding Y array with average at the end."
+msgstr "Remplissage du vecteur Y avec sa moyenne à la fin."
+
+#: ../src/frontend/toolbox/metro_util.py:218
+#, fuzzy
+msgid "In interpolate, the arrays have only one value (1)"
+msgstr "Dans interpolate, les vecteurs n'ont qu'une seule valeur."
+
+#: ../src/frontend/toolbox/metro_util.py:221
+msgid "In interpolate, iIncrement is too big. \n"
+msgstr "Dans interpolate, iIncrement est trop grand. \n"
+
+#: ../src/frontend/toolbox/metro_util.py:222
+msgid "Space between two values in xArray:"
+msgstr "Distance entre 2 valeurs dans xArray:"
+
+#: ../src/frontend/toolbox/metro_util.py:258
+msgid "In shift_left, npInput is not of size (1,).\n"
+msgstr "Dans shift_left, npInput n'est pas de la dimension (1,).\n"
+
+#: ../src/frontend/toolbox/metro_util.py:298
+msgid "In shift_right, npInput is not of size (1,).\n"
+msgstr "Dans shift_right, npInput n'est pas de la dimension (1,).\n"
+
+#: ../src/frontend/toolbox/metro_util.py:340
+msgid "No indice with this value: %d"
+msgstr "Aucun indice avec la valeur: %d"
+
+#: ../src/frontend/toolbox/metro_util.py:404
+msgid "Cannot determine the sign of zero"
+msgstr "Impossible de déterminer le signe de zéro"
+
+#: ../src/frontend/toolbox/metro_util.py:455
+msgid "In metro_util.subsample, subsampling rate"
+msgstr "Dans metro_util.subsample, le taux de sous-échantillonage"
+
+#: ../src/frontend/toolbox/metro_util.py:456
+msgid "is higher than array size: %d > %d"
+msgstr "est plus élevé que la longueur du vecteur: %d > %d"
+
+#: ../src/frontend/toolbox/metro_util.py:497
+msgid "Array are not of the same size"
+msgstr "Les vecteurs ne sont pas de la même longueur"
+
+#: ../src/frontend/toolbox/metro_util.py:498
+#, fuzzy
+msgid "cutting the first one"
+msgstr "troncature des premiers éléments"
+
+#: ../src/frontend/toolbox/metro_util.py:504
+msgid "In metro_util.concat_array, array must be"
+msgstr "Dans metro_util.concat_array, les vecteurs doivent être"
+
+#: ../src/frontend/toolbox/metro_util.py:505
+msgid " of the same dimension: %d != %d"
+msgstr "de la même dimension: %d != %d"
+
+#: ../src/frontend/toolbox/metro_util.py:593
+msgid "Version number:'%s' is too old. Version from '%s' "
+msgstr "Numéro de version: '%s' est obsolète. Les versions '%s' "
+
+#: ../src/frontend/toolbox/metro_util.py:595
+#: ../src/frontend/toolbox/metro_util.py:608
+msgid "to '%s' inclusively are supported"
+msgstr "jusqu'à '%s' inclusivement sont supportées."
+
+#: ../src/frontend/toolbox/metro_util.py:600
+msgid "Version number:'%s' is not yet supported. Version "
+msgstr "La version '%s' n'est pas encore supportée. "
+
+#: ../src/frontend/toolbox/metro_util.py:602
+msgid "from '%s' to '%s' inclusively are supported"
+msgstr "Les versions '%s' jusqu'à '%s' inclusivement sont supportées."
+
+#: ../src/frontend/toolbox/metro_util.py:606
+msgid "Can't find version number. Version from '%s' "
+msgstr "Incapable de trouver le numéro de version. Les versions de '%s' à"

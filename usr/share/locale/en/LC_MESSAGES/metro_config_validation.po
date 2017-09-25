@@ -1,0 +1,120 @@
+# translation of metro_config_validation.po to 
+# Copyright (C) 2007 Environment Canada.
+# Miguel Tremblay <miguel.tremblay@ec.gc.ca>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: metro_config_validation\n"
+"POT-Creation-Date: 2009-02-11 19:49+UTC\n"
+"PO-Revision-Date: 2004-11-09 10:25-0500\n"
+"Last-Translator: Miguel Tremblay <miguel.tremblay@ec.gc.ca>\n"
+"Language-Team:  <C@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#: toolbox/metro_config_validation.py:50
+msgid "Internal METRo configuration"
+msgstr "Internal METRo configuration"
+
+#: toolbox/metro_config_validation.py:52
+msgid "Hardcoded value"
+msgstr "Hardcoded value"
+
+#: toolbox/metro_config_validation.py:54
+msgid "Configuration file"
+msgstr "Configuration file"
+
+#: toolbox/metro_config_validation.py:56
+msgid "Command line parameter"
+msgstr "Command line parameter"
+
+#: toolbox/metro_config_validation.py:60
+msgid "Configuration error:\n"
+msgstr "Configuration error:\n"
+
+#: toolbox/metro_config_validation.py:62
+msgid "Config item: %s\n"
+msgstr "Config item: %s\n"
+
+#: toolbox/metro_config_validation.py:63
+msgid "Set from:    %s.\n"
+msgstr "Set from:    %s.\n"
+
+#: toolbox/metro_config_validation.py:64
+msgid ""
+"The following error occured:\n"
+"%s"
+msgstr ""
+"The following error occured:\n"
+"%s"
+
+#: toolbox/metro_config_validation.py:89
+msgid "Some XML definition are not complete.\n"
+msgstr "Some XML definition are not complete.\n"
+
+#: toolbox/metro_config_validation.py:90
+msgid "Each definition must have the following property "
+msgstr "Each definition must have the following property "
+
+#: toolbox/metro_config_validation.py:91
+msgid ""
+"set:\n"
+"NAME, XML_TAG, DATA_TYPE"
+msgstr ""
+"set:\n"
+"NAME, XML_TAG, DATA_TYPE"
+
+#: toolbox/metro_config_validation.py:110
+msgid "In item %s, '%s' is not a valid METRo data type."
+msgstr "In item %s, '%s' is not a valid METRo data type."
+
+#: toolbox/metro_config_validation.py:112
+msgid ""
+"\n"
+"Valid METRo data type are:\n"
+"[%s]"
+msgstr ""
+"\n"
+"Valid METRo data type are:\n"
+"[%s]"
+
+#: toolbox/metro_config_validation.py:218
+msgid ""
+"Fatal error, the date string '%s' passed to the\n"
+" "
+msgstr ""
+"Fatal error, the date string '%s' passed to the\n"
+" "
+
+#: toolbox/metro_config_validation.py:220
+msgid "option '--roadcast-start-date' doesn't conform to "
+msgstr "option '--roadcast-start-date' doesn't conform to "
+
+#: toolbox/metro_config_validation.py:221
+msgid "ISO 8601"
+msgstr "ISO 8601"
+
+#: toolbox/metro_config_validation.py:228
+msgid "No roadcast start date provided. The date of the\n"
+msgstr "No roadcast start date provided. The date of the\n"
+
+#: toolbox/metro_config_validation.py:229
+msgid "last observation will be used as the roadcast "
+msgstr "last observation will be used as the roadcast "
+
+#: toolbox/metro_config_validation.py:230
+msgid "start date\n"
+msgstr "start date\n"
+
+msgid "'%s' is not a valid road layer type.\n"
+msgstr "'%s' is not a valid road layer type.\n"
+
+msgid ""
+"Valid road layer type are:\n"
+"[%s]"
+msgstr ""
+"Valid road layer type are:\n"
+"[%s]"

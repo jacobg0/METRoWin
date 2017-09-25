@@ -1,0 +1,33 @@
+# translation of metro_string2dom_forecast.po to 
+# Copyright (C) 2007 Environnement Canada.
+# Miguel Tremblay <miguel.tremblay@ec.gc.ca>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: metro_string2dom_forecast\n"
+"POT-Creation-Date: Mon Nov  8 14:13:16 2004\n"
+"PO-Revision-Date: 2004-11-08 14:15-0500\n"
+"Last-Translator: Miguel Tremblay <miguel.tremblay@ec.gc.ca>\n"
+"Language-Team:  <C@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#: metro_string2dom_forecast.py:37
+msgid "Fatal Error when converting forecast "
+msgstr "Erreur fatale pendant la conversion de la chaîne de caractères du "
+
+#: metro_string2dom_forecast.py:38
+msgid ""
+"string to DOM. The error is:\n"
+"%s"
+msgstr ""
+"fichier de prévision atmosphérique en DOM. L'erreur est:\n"
+"%s"
+
+#: metro_string2dom_forecast.py:44
+msgid "Fatal Error, no forecast string to convert."
+msgstr "Erreur fatale, aucune chaîne de caractères pour la prévision atmosphérique à convertir."
+

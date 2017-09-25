@@ -1,0 +1,55 @@
+# French translations for PACKAGE package.
+# Copyright (C) 2014 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Miguel Tremblay <miguel.tremblay@ec.gc.ca>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-10-16 19:45+0000\n"
+"PO-Revision-Date: 2014-10-16 19:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 1.4\n"
+
+#: executable_module/metro_preprocess_qa_qc_station.py:87
+msgid "Option --enable-sunshadow is given but there is no "
+msgstr "Option --enable-sunshadow est indiqué mais il n'y a pas "
+
+#: executable_module/metro_preprocess_qa_qc_station.py:88
+msgid ""
+"azimuth data in station configuration file.\n"
+" "
+msgstr "de données d'azimuth dans le fichier de configuration de la station.\n"
+
+#: executable_module/metro_preprocess_qa_qc_station.py:89
+#: executable_module/metro_preprocess_qa_qc_station.py:101
+msgid "Please correct this or remove the option --enable-sunshadow"
+msgstr "Svp corriger ce problème ou retirer l'option --enable-sunshadow"
+
+#: executable_module/metro_preprocess_qa_qc_station.py:99
+msgid "Azimuth data in station configuration file "
+msgstr "Les données d'azimuth dans le fichier de configuration "
+
+#: executable_module/metro_preprocess_qa_qc_station.py:100
+msgid ""
+"is not ordered by equal growing azimuths.\n"
+" "
+msgstr "ne sont pas en ordre croissant et égales.\n"
+
+#: executable_module/metro_preprocess_qa_qc_station.py:108
+msgid "Azimuth data does not have a value at 0 and/or 360 degrees. "
+msgstr "Les données d'azimuth n'ont pas de valeur à 0 et/ou 360 degrées. "
+
+#: executable_module/metro_preprocess_qa_qc_station.py:109
+msgid ""
+"Please add one of this value to have a complete horizon.\n"
+" "
+msgstr "Svp ajoute une de ces valeurs pour compléter l'horizon.\n"
+

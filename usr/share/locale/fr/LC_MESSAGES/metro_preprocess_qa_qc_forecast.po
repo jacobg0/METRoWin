@@ -1,0 +1,57 @@
+# translation of metro_preprocess_qa_qc_forecast.po to
+# Copyright (C) 2007 Environnement Canada, 2005, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: metro_preprocess_qa_qc_forecast\n"
+"POT-Creation-Date: 2006-11-16 21:16+UTC\n"
+"PO-Revision-Date: 2006-11-16 21:27+0000\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:94
+msgid "Value in forecast file must be valid.\n"
+msgstr "Les valeurs dans le fichier de prÃ©vision doivent Ãªtre valides.\n"
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:95
+msgid "A value for the element <%s> is invalid"
+msgstr "Une valeur pour l'Ã©lÃ©ment <%s> est invalide"
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:96
+msgid ""
+" in the file\n"
+"'%s'"
+msgstr " dans le fichier\n"
+"'%s'"
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:127
+msgid "All the clouds value (<cc>) of atmospheric forecast must be"
+msgstr ""
+"Toutes les valeurs de couverture nuageuse (<cc>) de la prÃ©vision "
+"atmosphÃ©rique doivent Ãªtre "
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:128
+msgid " integers in interval 0-8. See file '%s'"
+msgstr "des entiers dans l'intervalle 0-8. Voir le fichier '%s'"
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:161
+msgid "All the precipitation value (<ra> and <sn>)"
+msgstr "Toutes les valeurs de prÃ©cipitation (<ra> et <sn>)"
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:162
+msgid " of atmospheric forecast represent the TOTAL"
+msgstr "de la prÃ©vision atmosphÃ©rique reprÃ©sente l'accumulation TOTALE "
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:163
+msgid " amount of precipitation since the beginning"
+msgstr "depuis le dÃ©but "
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:164
+msgid " of the period. See file '%s'"
+msgstr "de la pÃ©riode. Voir le fichier '%s'"
+

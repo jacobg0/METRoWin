@@ -1,0 +1,123 @@
+#!/bin/bash
+#
+# METRo : Model of the Environment and Temperature of Roads
+# METRo is Free and is proudly provided by the Government of Canada
+# Copyright (C) 2006 Environment Canada
+
+#  Questions or bugs report: metro@ec.gc.ca
+#  METRo repository: https://gna.org/projects/metro/
+#  Documentation: https://framagit.org/metroprojects/metro/wikis/home
+#
+#
+# Code contributed by:
+#  Miguel Tremblay - Canadian meteorological center
+#  Francois Fortin - Canadian meteorological center
+#
+#  $LastChangedDate$
+#  $LastChangedRevision$
+#
+########################################################################
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+progname=`basename $0`
+
+METRO_VERSION=3.3.1
+
+
+if [[ $1 = clean ]]; then    
+    echo "* Cleaning last METro model build attempt if necessary..."
+    rm -f _macadam.so *.o macadam.py macadam_wrap.c
+    exit 0
+fi
+
+# SETUP TRAP
+ERRMSG="\nERR - build METRo model - $progname : Script terminated due to
+error.  Correct error and restart.\n\n"
+
+trap 'echo -e $ERRMSG; exit 1' ERR
+
+echo "* Building METRo $METRO_VERSION model"
+
+if [ -n "$PYTHON_INCLUDE" ] ; then
+    if [ ! -d $PYTHON_INCLUDE ]; then
+        echo "The path for environment variable \$PYTHON_INCLUDE($PYTHON_INCLUDE)"
+        echo "is not valid. Abort execution."
+        exit 1
+    fi
+    PYTHON_INC=-I$PYTHON_INCLUDE
+else
+    echo "----------------------------------------------------------"
+    echo "WARNING!"
+    echo "No python path defined."
+    echo "Will try to used the default path for python 2.4"
+    echo "If it still doesn't work,"
+    echo "please set environment variable PYTHON_INCLUDE to your"
+    echo "python include directory."
+    echo "Ex: export PYTHON_INCLUDE=\"/usr/local/include/python2.4\""
+    echo "----------------------------------------------------------"
+    echo ""
+    PYTHON_INC="-I/usr/include/python2.4/"
+fi
+echo "    Python include path = "$PYTHON_INC
+
+PLATFORM=`python -c "import platform;print platform.architecture()[0]"`
+if  [ $PLATFORM = "64bit" ]; then
+    FORTRAN_DEFAULT_INTEGER="-fdefault-integer-8"
+    echo "    64 bit architecture detected"
+else
+    FORTRAN_DEFAULT_INTEGER=""
+fi
+
+echo "    Using SWIG"
+echo '    macadam.i :'
+swig -python  macadam.i 
+
+echo "    C compilation"
+gcc -c -fPIC -Wall  -Wno-implicit  macadam.c $PYTHON_INC
+gcc -c -fPIC  macadam_wrap.c $PYTHON_INC
+
+if [ -z $FC ]; then
+    if [ `which gfortran` ]; then
+        FC=gfortran
+    elif [ `which g77` ]; then
+        FC=g77
+    else
+        echo "----------------------------------------------------------"
+	echo "WARNING!"
+	echo "No Fortran compiler found. Tried gfortran and g77"
+	echo "Please set environment variable FC to your Fortran compiler."
+	echo "Ex: export FC=\"my_fortran_compiler\""
+	echo "----------------------------------------------------------"
+	exit 1
+    fi
+fi
+
+echo "    Fortran compilation"
+$FC -Wall -Wsurprising -W -c -fPIC  $FORTRAN_DEFAULT_INTEGER lib_gen.f grille.f array2matrix.f initial.f coupla.f lib_therm.f flxsurfz.f balanc.f constPhys.f 
+
+
+echo "    Link"
+$FC -shared macadam.o macadam_wrap.o  lib_gen.o  grille.o array2matrix.o initial.o coupla.o lib_therm.o flxsurfz.o balanc.o constPhys.o  -lc -o _macadam.so
+
+
+echo "    Copying .so in usr/share/metro/model"
+if [ ! -d ../../usr/share/metro/model ]; then
+    mkdir ../../usr/share/metro/model
+fi
+cp _macadam.so ../../usr/lib/metro/
+cp macadam.py ../../usr/share/metro/model/
+
+#cp -v _macadam.so  macadam.py ../frontend/model/

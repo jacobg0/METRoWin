@@ -1,0 +1,41 @@
+# translation of metro_infdata.po to 
+# Copyright (C) 2007 Environnement Canada.
+# Miguel Tremblay <miguel.tremblay@ec.gc.ca>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: metro_infdata\n"
+"POT-Creation-Date: Fri Nov  5 15:56:40 2004\n"
+"PO-Revision-Date: 2004-11-05 16:00-0500\n"
+"Last-Translator: Miguel Tremblay <miguel.tremblay@ec.gc.ca>\n"
+"Language-Team:  <C@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#: metro_infdata.py:53 metro_infdata.py:62
+msgid "%s object doesn't have a Metro_data item. "
+msgstr "L'objet %s ne contient pas d'élément Metro_data. "
+
+#: metro_infdata.py:54
+msgid "Try to use the get_data_collection() method"
+msgstr "Essayez d'utiliser la méthode get_data_collection()"
+
+#: metro_infdata.py:63
+msgid "Try to use the set_data_collection() method"
+msgstr "Essayez d'utiliser la méthode set_data_collection()"
+
+#: metro_infdata.py:72 metro_infdata.py:81
+msgid "%s object doesn't have a Metro_data_collection "
+msgstr "L'objet %s ne contient pas d'élément Metro_data_collection."
+
+#: metro_infdata.py:73
+msgid "item. Try to use the get_data() method."
+msgstr "Essayez d'utiliser la méthode get_data()."
+
+#: metro_infdata.py:82
+msgid "item. Try to use the set_data() method."
+msgstr "Essayez d'utiliser la méthode set_data()."
+

@@ -1,0 +1,104 @@
+# translation of metro_model.po to 
+# translation of metro_model.po to
+# translation of test.po to
+# translation of test.po to
+# translation of metro_model.po to
+# translation of metro_model.p0.po to
+# Copyright (C) 2007 Environment Canada.
+# Miguel Tremblay <miguel.tremblay@ec.gc.ca>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: metro_model\n"
+"POT-Creation-Date: 2007-03-05 18:17+UTC\n"
+"PO-Revision-Date: 2004-12-02 11:56-0500\n"
+"Last-Translator: Miguel Tremblay <miguel.tremblay@ec.gc.ca>\n"
+"Language-Team:  <C@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#: ../src/frontend/executable_module/metro_model.py:87
+msgid "Bypassing METRo core, roadcast not created."
+msgstr "Bypassing METRo core, roadcast not created."
+
+#: ../src/frontend/executable_module/metro_model.py:132
+msgid "year: [%s]"
+msgstr "year: [%s]"
+
+#: ../src/frontend/executable_module/metro_model.py:137
+msgid "month: [%s]"
+msgstr "month: [%s]"
+
+#: ../src/frontend/executable_module/metro_model.py:142
+msgid "day: [%s]"
+msgstr "day: [%s]"
+
+#: ../src/frontend/executable_module/metro_model.py:147
+msgid "hour: [%s]"
+msgstr "hour: [%s]"
+
+#: ../src/frontend/executable_module/metro_model.py:181
+msgid "Number of layer="
+msgstr "Number of layer="
+
+#: ../src/frontend/executable_module/metro_model.py:190
+msgid "roadlayer type="
+msgstr "roadlayer type="
+
+#: ../src/frontend/executable_module/metro_model.py:193
+msgid "roadlayer thick="
+msgstr "roadlayer thick="
+
+#: ../src/frontend/executable_module/metro_model.py:201
+msgid "timezone="
+msgstr "timezone="
+
+#: ../src/frontend/executable_module/metro_model.py:207
+msgid "issue time="
+msgstr "issue time="
+
+#: ../src/frontend/executable_module/metro_model.py:269
+msgid "------------station config START---------------------"
+msgstr "------------station config START---------------------"
+
+#: ../src/frontend/executable_module/metro_model.py:276
+msgid "Short time zone = "
+msgstr "Short time zone = "
+
+#: ../src/frontend/executable_module/metro_model.py:283
+msgid "lat,lon: "
+msgstr "lat,lon: "
+
+#: ../src/frontend/executable_module/metro_model.py:289
+msgid "------------station config END---------------------"
+msgstr "------------station config END---------------------"
+
+#: ../src/frontend/executable_module/metro_model.py:296
+msgid "Start sending data to METRo core"
+msgstr "Start sending data to METRo core"
+
+#: ../src/frontend/executable_module/metro_model.py:311
+msgid "Fatal error in METRo physical model."
+msgstr "Fatal error in METRo physical model."
+
+#: ../src/frontend/executable_module/metro_model.py:316
+msgid "End of METRo core"
+msgstr "End of METRo core"
+
+#~ msgid "fLCorr is: "
+#~ msgstr "fLCorr is: "
+
+#~ msgid "Observation_header="
+#~ msgstr "Observation_header="
+
+#~ msgid "Observation_data="
+#~ msgstr "Observation_data="
+
+#~ msgid "Forecast_header="
+#~ msgstr "Forecast_header="
+
+#~ msgid "Forecast_data="
+#~ msgstr "Forecast_data="

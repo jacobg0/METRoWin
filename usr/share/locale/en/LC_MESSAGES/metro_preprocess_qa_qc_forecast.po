@@ -1,0 +1,57 @@
+# translation of metro_preprocess_qa_qc_forecast.po to 
+# Copyright (C) 2007 Environment Canada, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: metro_preprocess_qa_qc_forecast\n"
+"POT-Creation-Date: 2007-03-05 18:17+UTC\n"
+"PO-Revision-Date: 2007-03-05 18:34+0000\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:94
+msgid "Value in forecast file must be valid.\n"
+msgstr "Value in forecast file must be valid.\n"
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:95
+msgid "A value for the element <%s> is invalid"
+msgstr "A value for the element <%s> is invalid"
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:96
+#, fuzzy
+msgid ""
+" in the file\n"
+"'%s'"
+msgstr ""
+" in the file\n"
+"'%s'"
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:127
+msgid "All the clouds value (<cc>) of atmospheric forecast must be"
+msgstr "All the clouds value (<cc>) of atmospheric forecast must be"
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:128
+msgid " integers in interval 0-8. See file '%s'"
+msgstr " integers in interval 0-8. See file '%s'"
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:161
+msgid "All the precipitation value (<ra> and <sn>)"
+msgstr "All the precipitation value (<ra> and <sn>)"
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:162
+msgid " of atmospheric forecast represent the TOTAL"
+msgstr " of atmospheric forecast represent the TOTAL"
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:163
+msgid " amount of precipitation since the beginning"
+msgstr " amount of precipitation since the beginning"
+
+#: ../src/frontend/executable_module/metro_preprocess_qa_qc_forecast.py:164
+msgid " of the period. See file '%s'"
+msgstr " of the period. See file '%s'"
+

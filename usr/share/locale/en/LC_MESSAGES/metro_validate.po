@@ -1,0 +1,59 @@
+# translation of metro_validate.po to 
+# Copyright (C) 2007 Environment Canada.
+# Miguel Tremblay <miguel.tremblay@ec.gc.ca>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: metro_validate\n"
+"POT-Creation-Date: Mon Nov  8 15:54:15 2004\n"
+"PO-Revision-Date: 2004-11-08 15:54-0500\n"
+"Last-Translator: Miguel Tremblay <miguel.tremblay@ec.gc.ca>\n"
+"Language-Team:  <C@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#: metro_validate.py:15
+msgid "class %s is a virtual class"
+msgstr "class %s is a virtual class"
+
+#: metro_validate.py:41
+msgid "Fatal Error when validating %s "
+msgstr "Fatal Error when validating %s "
+
+#: metro_validate.py:42
+msgid ""
+"XML string.\n"
+"The error is:\n"
+"%s"
+msgstr ""
+"XML string.\n"
+"The error is:\n"
+"%s"
+
+#: metro_validate.py:47
+msgid "%s XML string has been validated"
+msgstr "%s XML string has been validated"
+
+#: metro_validate.py:52
+msgid "Fatal Error, %s XML string is empty"
+msgstr "Fatal Error, %s XML string is empty"
+
+#: metro_validate.py:57
+msgid "Fatal Error, no %s XML string to validate."
+msgstr "Fatal Error, no %s XML string to validate."
+
+#: metro_validate.py:72
+msgid "Error when validating "
+msgstr "Error when validating "
+
+#: metro_validate.py:73
+msgid "XML string."
+msgstr "XML string."
+
+#: metro_validate.py:76
+msgid "No XML string to validate"
+msgstr "No XML string to validate"
+

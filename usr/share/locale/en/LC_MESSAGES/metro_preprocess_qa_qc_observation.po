@@ -1,0 +1,167 @@
+# translation of metro_preprocess_qa_qc_observation.po to
+# translation of metro_preprocess_qa_qc_observation.po to
+# Copyright (C) 2007 Environment Canada.
+#
+# Miguel Tremblay <miguel.tremblay@ec.gc.ca>, 2004, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: metro_preprocess_qa_qc_observation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-10-06 14:34+0000\n"
+"PO-Revision-Date: 2014-10-06 14:43+0000\n"
+"Last-Translator: tremblay\n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:97
+#, fuzzy
+msgid "No valid observations. Halting METRo"
+msgstr "No valid observation"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:131
+msgid "No valid observation"
+msgstr "No valid observation"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:175
+msgid "Invalid road temperature"
+msgstr "Invalid road temperature"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:180
+#, python-format
+msgid "%d th  temperature is %f"
+msgstr "%d th  temperature is %f"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:226
+#, python-format
+msgid "More than %d minutes between 2 measures"
+msgstr "More than %d minutes between 2 measures"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:233
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:282
+#, python-format
+msgid "Indice: %d"
+msgstr "Indice: %d"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:236
+#, python-format
+msgid "Cutoff time: day:%d hour:%d minute:%d"
+msgstr "Cutoff time: day:%d hour:%d minute:%d"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:252
+msgid "Time of observation are not in order. "
+msgstr "Time of observation are not in order. "
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:253
+#, python-format
+msgid "Check the %d th value"
+msgstr "Check the %d th value"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:275
+#, python-format
+msgid "Observation is more than %d hours"
+msgstr "Observation is more than %d hours"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:277
+msgid "before the first roadcast"
+msgstr "before the first roadcast"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:304
+msgid "Observation after the first roadcast time of METRo"
+msgstr "Observation after the first roadcast time of METRo"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:308
+#, python-format
+msgid "Threshold: %d"
+msgstr "Threshold: %d"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:315
+#, python-format
+msgid "Time difference: %f"
+msgstr "Time difference: %f"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:356
+#, python-format
+msgid "No valid sub-surface temperature (element <sst>) in observation file %s"
+msgstr ""
+"No valid sub-surface temperature (element <sst>) in observation file %s"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:465
+#, python-format
+msgid "First atmospheric forecast: %s"
+msgstr "First atmospheric forecast time:%s"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:470
+#, python-format
+msgid "First valid observation   : %s"
+msgstr "First valid observation   : %s"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:505
+msgid "Option '--fix-deep-soil-temperature' is used while "
+msgstr "Option '--fix-deep-soil-temperature' is used while "
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:506
+msgid "the station is of type BRIDGE. Deep soil "
+msgstr "the station is of type BRIDGE. Deep soil "
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:507
+msgid "Temperature  will not be used."
+msgstr "Temperature  will not be used."
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:516
+msgid "Deep soil temperature following the option "
+msgstr "Deep soil temperature following the option "
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:517
+msgid "'-fix-deep-soil-temperature' must be between "
+msgstr "'-fix-deep-soil-temperature' must be between "
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:518
+msgid "boundaries ["
+msgstr "boundaries ["
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:527
+#, fuzzy
+msgid "Using deep soil temperature: "
+msgstr "Invalid road temperature"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:528
+msgid " degree Celsius"
+msgstr " degree Celsius"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:532
+msgid "Option '-fix-deep-soil-temperature' must be "
+msgstr "Option '-fix-deep-soil-temperature' must be "
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:533
+msgid "followed by a numeric value. The given value '"
+msgstr "followed by a numeric value. The given value '"
+
+#: src/frontend/executable_module/metro_preprocess_qa_qc_observation.py:534
+msgid "' is not a number."
+msgstr "' is not a number."
+
+#, fuzzy
+#~ msgid "More than 8 hours between the valid observations"
+#~ msgstr "More than 8 hours between the valid observations"
+
+#~ msgid " and the beginning of the roadcast"
+#~ msgstr " and the beginning of the roadcast"
+
+#~ msgid ""
+#~ "Roadcast start date set to the date of\n"
+#~ "the last "
+#~ msgstr ""
+#~ "Roadcast start date set to the date of\n"
+#~ "the last "
+
+#~ msgid "observation: '%s'"
+#~ msgstr "observation: '%s'"
+
+#~ msgid "day %d hour %d minute %d"
+#~ msgstr "day %d hour %d minute %d"

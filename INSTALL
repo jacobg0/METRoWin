@@ -1,0 +1,89 @@
+= Installation procedure =
+
+METRO has been designed to run under GNU/Linux operating system on a x86 processor.
+
+In case of trouble during the installation, please read see the online documentation at:
+https://framagit.org/metroprojects/metro/wikis/home
+
+== Needed package ==
+
+To run METRo, you will need the following software packages:
+
+    * python 2.3 or greater
+    * gfortran
+    * SWIG
+    * libxml2 (see further for the right version)
+    * numpy 0.9.8 or +
+
+== Prerequisite installation ==
+
+=== Red hat | Mandriva | Debian (Knoppix, Ubuntu and other Debian based) ===
+
+   1. Install gfortran;
+   2. Be sure that you have python 2.3.0 or +.
+   3. Be sure that you have SWIG 1.3.20 or +.
+   4. Download the package numpy with you package manager or:
+          * Go to Numpy homepage and download the source: http://numpy.scipy.org/
+          * Become root and install the package
+	    python setup.py install
+   5. You must have the library libxml2, release 2.6.9 or +. You must also have the corresponding python wrapper (python-libxml2).
+          * To know the release of libxml2 you have installed, do this following command:
+
+             ls /usr/lib | grep libxml2.so
+
+          * The written number represent the release you have installed. To avoid all conflicts, download the tarball with the corresponding release number and install. 
+
+
+=== Gentoo linux ===
+Become root and
+
+   1. Install gcc with the compiler gfortran
+
+       USE="fortran" emerge sys-devel/gcc
+
+   2. Install/Update python at the release 2.3 or +
+
+       emerge -u dev-lang/python
+
+   3. Install/Update SWIG at the release 1.3.20 or +
+
+       emerge -u dev-lang/swig
+
+   4. Install/Update the package libxml2 at the release 2.6.9 or +
+
+       emerge -u dev-libs/libxml2 
+
+   5. Install/Update the package numpy at the release 0.9.8 or +
+
+       emerge -u dev-python/numpy
+
+== METRo software installation ==
+
+   1. Decompress the METRo software.
+
+      Ex: tar xjvf metro-x.x.x.tar.bz2
+
+   2. If there is more than one version of python on your system, set the environment variable PYTHON_INCLUDE to indicate the directory where you find the "include" of python 2.N, where 'N' is the python version..
+
+      Ex: export PYTHON_INCLUDE=/usr/local/include/python2.N
+
+   3. Execute the script setup.sh with the destination directory as an argument.
+
+      Ex: ./setup.sh /usr/local
+
+   4. To verify your installation, in the directory
+
+       path_to_metro/usr/bin
+
+      do this command
+
+      python ./metro --selftest 
+
+      if the file
+
+       path_to_metro/usr/share/metro/data/roadcast/roadcast.xml
+
+      was created successfully and the differences with 
+       path_to_metro/usr/share/metro/data/selftest/roadcast_reference.xml
+      is only the element <production-date>.
+
