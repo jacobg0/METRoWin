@@ -1,4 +1,10 @@
-# METRo README file
+# METRoWin
+
+METRoWin (MET Rowan) is a road weather forecast software derived from METRo, originally created by Miguel Tremblay and Francois Fortin. More on the original METRo below. METRoWin is simply a new implementation of METRo designed to run on Windows.  
+
+METRoWin is maintained by Lonnie L. Souder II and Garret Jacobs and distributed by the Rowan University Department of Civil & Environmental Engineering.  
+
+# METRo (The Original)
 
 METRo stands for "Model of the Environment and Temperature of Roads".
 It is a road weather forecast software. With the help of observations 
