@@ -34,13 +34,17 @@
 
 progname=`basename $0`
 
-METRO_VERSION=3.3.1
+METRO_VERSION=3.3.2
 
 
 if [[ $1 = clean ]]; then    
     echo "* Cleaning last METro model build attempt if necessary..."
     rm -f _macadam.so *.o macadam.py macadam_wrap.c
     exit 0
+elif [[ $1 = "" ]]; then
+    destination_path="../.."
+else
+    destination_path=$1
 fi
 
 # SETUP TRAP
@@ -114,10 +118,15 @@ $FC -shared macadam.o macadam_wrap.o  lib_gen.o  grille.o array2matrix.o initial
 
 
 echo "    Copying .so in usr/share/metro/model"
-if [ ! -d ../../usr/share/metro/model ]; then
-    mkdir ../../usr/share/metro/model
+if [ ! -d $destination_path/usr/share/metro/model ]; then
+    mkdir $destination_path/usr/share/metro/model
 fi
-cp _macadam.so ../../usr/lib/metro/
-cp macadam.py ../../usr/share/metro/model/
+cp macadam.py $destination_path/usr/share/metro/model/
+
+if [ ! -d $destination_path/usr/lib/metro ]; then
+    mkdir -p $destination_path/usr/lib/metro
+fi
+cp _macadam.so $destination_path/usr/lib/metro/
+
 
 #cp -v _macadam.so  macadam.py ../frontend/model/

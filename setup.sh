@@ -154,7 +154,7 @@ if [ $bCompile == 1 ]; then
     fi
     cd src/model
     ../../scripts/do_macadam clean
-    ../../scripts/do_macadam
+    ../../scripts/do_macadam $destination_path
     cd $installation_dir
 #else
 #    echo "* Use provided binary for physic model"
@@ -193,8 +193,9 @@ cp $sVerbose -r src/frontend/toolbox $destination_path/usr/share/metro
 #    cp $sVerbose src/model/_macadam.so.prebuilt $destination_path/usr/lib/metro/_macadam.so
 #fi
 
+mkdir -p $destination_path/usr/share/doc/metro/
 echo "* Copying METRo doc files to: "$destination_path/usr/share/doc/metro/
-cp $sVerbose INSTALL LICENSE README $destination_path/usr/share/doc/metro/
+cp $sVerbose INSTALL LICENSE README.md README.devel $destination_path/usr/share/doc/metro/
 
 echo "* Creating METRo log directory: "$destination_path/var/log
 mkdir -p $destination_path/var/log
@@ -202,6 +203,7 @@ mkdir -p $destination_path/var/log
 
 cd $installation_dir
 
+mkdir -p $destination_path/usr/bin
 echo "* Make link to METRo executable:"
 echo "  $destination_path/usr/bin/metro -> $destination_path/usr/share/metro/metro.py"
 ln -sf ../share/metro/metro.py $destination_path/usr/bin/metro  
